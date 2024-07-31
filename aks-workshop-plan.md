@@ -7,7 +7,7 @@ Below is a list of the planned workshops we're building for AKS.
 3. Securing AKS Clusters 
 4. AI Apps on AKS
 
-### AKS and Kubernetes for Beginners
+### Getting Started with Azure Kubernetes Service (AKS)
 Example: https://moaw.dev/workshop/getting-started-with-aks 
 
 1. Getting started
@@ -15,73 +15,76 @@ Example: https://moaw.dev/workshop/getting-started-with-aks
     * Prerequisites
     * Workshop instructions
     * Setting up your environment
+    * For basic container learning, go here: https://learn.microsoft.com/azure/aks/tutorial-kubernetes-prepare-app?tabs=azure-cli 
 2. Deploy your AKS Cluster
     * Familiarize with AKS Presets in portal
-    * Deploy AKS Cluster (CLI)
+    * Deploy AKS Automatic Cluster (CLI)
     * Connect to AKS 
-3. Container basics (skip this if in cloud shell)
-    * Dockerfile
-    * Create a container
-    * Run container locally
-4. Azure Container Registry 
+3. Azure Container Registry 
     * Deploy Azure Container Registry (ACR)
-    * Familiarize with ACR 
-    * Push container image (from step 3)
-5. Deploy Store App to AKS
+    * Attach ACR to AKS cluster
+    * Import aks-store images to ACR
+4. Deploy Store App to AKS
     * Getting familiar with AKS Store app 
     * Publishing images to ACR
     * Deployments and Services
-    * Ingress and App Routing Add-on
-6. App Updates and Rollbacks
-    * Deployment rolling updates
-    * AKS Automated Deployments
-7. Application and Cluster Scaling
-    * Cluster Autoscaler
     * Setting request and limits
+    * Ingress and App Routing Add-on
+5. App Updates and Rollbacks
+    * Deployment rolling updates
+    * PodDisruptionBudgets
+6. Application and Cluster Scaling
+    * Manual application scaling (deployment)
+    * HPA
     * Scaling with KEDA based on CPU utilization
-8. Storage and Persisting Data
-    * Storage classes
-    * Creating a PVC and adapting app to persist data
-9. Switch Databases to Azure PaaS
+7. Handling Stateful Workloads
+    * AKS Storage classes and PVC's
     * Replace RabbitMQ with Azure Service Bus
     * Replace MongoDB for Azure Cosmos DB
-10. Observability
+8. Observability
     * Prometheus and Grafana
     * Container Insights
-    * Control plane metrics
-    * App Insights
+    * Control Plane metrics
+9. CI/CD and Automated Deployments
+    * Use AKS Automated Deployments with a single service to setup CI/CD
 
 ### Advanced AKS and Day 2 Operations
 
 1. Cluster sizing and topology
-  * System and User nodepools
-  * Azure Linux
-  * Multitenancy
-  * Availability Zones
+    * System and User nodepools
+    * Azure Linux
+    * Multitenancy
+    * Availability Zones
 2. Cluster Update Management
-  * API Server upgrades
-  * Node image updates
-  * Maintenance windows
+    * API Server upgrades
+    * Node image updates
+    * Maintenance windows
 3. Networking Concepts
-  * Ingress
-  * WAF
-  * Network policy
-  * Advanced Container Networking Services (ACNS)
-  * Private AKS Clusters
+    * Ingress
+    * WAF
+    * Network policy
+    * Advanced Container Networking Services (ACNS)
+    * Private AKS Clusters
 4. Cost optimization
-  * Node Auto-provision (Karpenter)
-  * VPA
-  * AKS Cost Analysis
-  * Spot and Reservced Instances
+    * Node Auto-provision (Karpenter)
+    * VPA
+    * AKS Cost Analysis
+    * Spot and Reservced Instances
 5. Basic security topics
-  * Access management
-  * Deployment Safeguards
-  * Managing secrets
-  * Workload Identity
-  * Image security
+    * Access management
+    * RBAC (Azure and K8s)
+    * Deployment Safeguards
+    * Managing secrets
+    * Workload Identity
+    * Basic image security (Image Cleaner, Defender?)
 6. Fleet Management
 7. Istio Service Mesh Add-on
-8. GitOps and Application Delivery 
+    * Istio deployment
+    * Sidecar injection
+    * Mesh and Proxy config
+    * Istio ingress
+    * Upgrades and lifecycle management
+8. GitOps and Application Delivery (ArgoCD)
 9. Load Testing your application
 
 ### AI Apps on AKS
@@ -89,6 +92,7 @@ Example: https://moaw.dev/workshop/getting-started-with-aks
 1. GPU Configuration
 2. MLOps
 3. KAITO
+4. Big Bertha? 
 
 ### Securing AKS Clusters
 Example: https://securekubernetes.com
@@ -96,7 +100,7 @@ Example: https://securekubernetes.com
 Focus on attack and defense approaches
 Compliance
 
-### Skillable Lab for reference (KubeCon Paris)
+### Existing Lab for reference (KubeCon Paris)
 Exercise 1 - The Azure Container Registry
 Exercise 2 - Deploying the Azure Kubernetes Service (AKS) cluster
 Exercise 3 - Your first deployment
