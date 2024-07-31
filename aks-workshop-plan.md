@@ -101,12 +101,12 @@ Focus on attack and defense approaches
 Compliance
 
 ### Existing Lab for reference (KubeCon Paris)
-Exercise 1 - The Azure Container Registry
-Exercise 2 - Deploying the Azure Kubernetes Service (AKS) cluster
-Exercise 3 - Your first deployment
-Exercise 4 - Scaling and high availability
-Exercise 5 - Deploying MongoDB to AKS
-Exercise 6 - Updates and rollbacks
-Exercise 7 - Storage
-Exercise 8 - Helm
-Exercise 9 - Deploying Prometheus and Grafana for AKS cluster monitoring
+  * Exercise 1 - The Azure Container Registry
+  * Exercise 2 - Deploying the Azure Kubernetes Service (AKS) cluster
+  * Exercise 3 - Your first deployment
+  * Exercise 4 - Scaling and high availability
+  * Exercise 5 - Deploying MongoDB to AKS
+  * Exercise 6 - Updates and rollbacks
+  * Exercise 7 - Storage
+  * Exercise 8 - Helm
+  * Exercise 9 - Deploying Prometheus and Grafana for AKS cluster monitoring
